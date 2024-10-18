@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="17.71" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Restful Booker API Testleri" name="PUT isteği ile mevcut bir booking kaydını güncelle" time="16.992">
+<system-out><![CDATA[
+Given Kullanici ID'si 10 olan booking kaydini gunceller.....................passed
+Then Status kodunun 200 oldugunu ve booking kaydinin guncellendigini dogrular.passed
+]]></system-out>
+</testcase>
+</testsuite>
