@@ -8,6 +8,7 @@ import utilities.BaseUrl;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 import static io.restassured.RestAssured.given;
 
@@ -43,8 +44,8 @@ public class RestfullBookerStepDefinition extends BaseUrl {
         Map<String,Object>bookingData=new HashMap<>();
         bookingData.put("firstname","Ortanca");
         bookingData.put("lastname","Kartopu");
-        bookingData.put("totalprice",150);
-        bookingData.put("depositpaid",true);
+        bookingData.put("totalprice", Optional.of(150));
+        bookingData.put("depositpaid", Optional.of(true));
 
         Map<String,Object>bookingDates=new HashMap<>();
         bookingDates.put("checkin","2024-10-01");
@@ -71,8 +72,8 @@ public class RestfullBookerStepDefinition extends BaseUrl {
         Map<String,Object>updateBooking=new HashMap<>();
         updateBooking.put("firstname","Deniz");
         updateBooking.put("lastname","Toprak");
-        updateBooking.put("totalprice",200);
-        updateBooking.put("depositpaid",false);
+        updateBooking.put("totalprice", Optional.of(200));
+        updateBooking.put("depositpaid", Optional.of(false));
 
         Map<String,Object>bookingDates=new HashMap<>();
         bookingDates.put("checkin","2024-10-01");
